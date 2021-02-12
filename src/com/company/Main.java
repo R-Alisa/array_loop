@@ -120,19 +120,22 @@ public class Main {
             }
 
         }
+        byte failedCount = 0;
+        byte ACount = 0;
+
         for (int i = 0; i<myArray.length; i++) {
-            byte failedCount = 0;
-            byte ACount = 0;
+
 
             if (myArray[i] < 4) {
                 failedCount++;
-                System.out.println(failedCount + " students failed."); // does not work as it should
             }
             if (myArray[i] == 10) {
                 ACount++;
-                System.out.println(ACount + " students got A."); // does not work as it should
             }
         }
+        System.out.println(failedCount + " students failed.");
+        System.out.println(ACount + " students got A.");
+
 
     byte countgrades  = 0;   // does not work as it should
         for(int check = 0; check <=10; check++){
